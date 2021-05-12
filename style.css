@@ -3,21 +3,22 @@
     top: 5%;
     font-size: 96px;
     left: 13%;
-    font-family: fantasy, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .picPageTitleText {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
     top: -5%;
     font-size: 96px;
-    font-family: fantasy, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
 }
 
 .homepage {
     background-image: url("pictures/golden_retriever.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
