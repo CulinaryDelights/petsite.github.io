@@ -1,0 +1,165 @@
+.homeText {
+    position: absolute;
+    top: 5%;
+    font-size: 96px;
+    left: 13%;
+    font-family: fantasy, sans-serif;
+}
+
+.picPageTitleText {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -5%;
+    font-size: 96px;
+    font-family: fantasy, sans-serif;
+}
+
+.homepage {
+    background-image: url("pictures/golden_retriever.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dogDropBtn {
+    background-color:steelblue;
+    border: none;
+    padding: 12px 36px;
+    transition-duration: 0.2s;
+}
+
+.dogDropdown {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    display: inline-block;
+}
+
+.dogDropContent {
+    display: none;
+    background-color: steelblue;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dogDropContent a {
+    color: black;
+    padding: 12px 36px;
+    display: block;
+    text-decoration: none;
+}
+
+.dogDropContent a:hover {
+    background-color: #5f9cce;
+}
+
+.dogDropdown:hover .dogDropContent {
+    display: block;
+}
+
+.dogDropdown:hover .dogDropBtn {
+    background-color: #092e72;
+}
+
+.dogGameButton {
+    background-color:steelblue;
+    border: none;
+    padding: 12px 24px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transition-duration: 0.4s;
+    color: black;
+    text-decoration: none; 
+}
+
+.dogGameButton:hover {
+    background-color: #092e72;
+}
+
+.backButton {
+    background-color:steelblue;
+    border: none;
+    padding: 12px 24px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transition-duration: 0.4s;
+    color: black;
+    text-decoration: none;
+}
+
+.backButton:hover {
+    background-color: #5f9cce;
+    cursor: pointer;
+}
+
+.dogPic {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+}
+
+
+/*Game stuff after this point*/
+
+#pointCounter {
+    position: absolute;
+    top: 325px;
+    left: 880px;
+}
+
+#gameCover {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 42.5%;
+    left: 33%;
+    background-color: wheat;
+}
+
+#gameEndCover {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 42.5%;
+    left: 33%;
+    background-color: #00b66b;
+    display: none;
+}
+
+#startGame {
+    position: absolute;
+    top: 128px;
+    left: 208px;
+    padding: 12px 24px;
+    background-color: crimson;
+    transition-duration: 0.4s;
+    border: black solid 2px;
+}
+
+#startGame:hover {
+    background-color: rgb(192, 58, 84);
+}
+
+#timeCounter {
+    position: absolute;
+    top: 325px;
+    left: 550px;
+}
+
+#endPointsText {
+    color:#0030b6; 
+    position: relative; 
+    top: 150px; 
+    left: 200px; 
+}
+
+.treat {
+    position: absolute;
+    left: -100px;
+    top: -500px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}

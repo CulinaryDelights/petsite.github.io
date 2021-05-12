@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Dog Game</title>
+        <link rel="stylesheet" href="style.css">
+        <canvas id="canvas" style="position: absolute; top: 42.5%; left: 33%;"></canvas>
+    </head>
+    <body style="background-color:#6b00b6;">
+        <h1 class="picPageTitleText">The Dog Game</h1>
+        <script src="game.js"></script>
+        <a class="backButton" href='home.html'>Back</a>
+
+        <img src="pictures/game/clock.png" id="clockTreat" class="treat">
+        <img src="pictures/game/pizza.png" id="pizzaTreat" class="treat">
+        <img src="pictures/game/pepperoni_pizza.png" id="peppizzaTreat" class="treat">
+        <img src="pictures/game/dog.png" id="playerLeft" class="treat">
+        <img src="pictures/game/dogFlip.png" id="playerRight" class="treat">
+
+        <div id="gameCover">
+            <button onclick="Start()" id="startGame">Play</button>
+        </div>
+        
+        <h3 id="pointCounter"></h3>
+        <h3 id="timeCounter"></h3>
+
+        <div id="gameEndCover">
+            <h2 style="color:#0030b6; position: absolute; top: 50%; left: 50%; margin-left: -140px; margin-top: -65px;">Did you beat your highscore?</h2>
+            <h2 id="endPointsText"></h2>
+        </div>
+    </body>
+</html>
