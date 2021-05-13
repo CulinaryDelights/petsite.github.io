@@ -92,7 +92,7 @@ function Start() {
         player.x += player.xVelocity;
         player.xVelocity *= 0.9;
 
-        context.fillStyle = "#87CEEB";
+        context.fillStyle = "#87DFEB";
         context.fillRect(0,0,canvas.width,canvas.height);
         context.beginPath();
         context.drawImage(player.image,player.x,player.y,player.width,player.height);
@@ -136,7 +136,9 @@ function Start() {
             document.getElementById('timeCounter').innerHTML = 'Seconds Left: ' + seconds;
         }
         context.fillStyle = "#743E0C";
-        context.fillRect(0,235,500,65);
+        context.fillRect(0,240,500,60);
+        context.fillStyle = "#00FF00"
+        context.fillRect(0,238,500,20);
         window.requestAnimationFrame(loop);
 
         if(seconds <= 0) {

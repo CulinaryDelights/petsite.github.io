@@ -3,7 +3,7 @@
     top: 5%;
     font-size: 96px;
     left: 13%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS';
 }
 
 .picPageTitleText {
@@ -11,8 +11,9 @@
     left: 50%;
     top: -5%;
     font-size: 96px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS';
     font-weight: 900;
+    transform: translate(-50%);
 }
 
 .homepage {
@@ -107,8 +108,8 @@
 
 #pointCounter {
     position: absolute;
-    top: 325px;
-    left: 880px;
+    top: 45%;
+    left: 58%;
 }
 
 #gameCover {
@@ -146,8 +147,8 @@
 
 #timeCounter {
     position: absolute;
-    top: 325px;
-    left: 550px;
+    top: 45%;
+    left: 36%;
 }
 
 #endPointsText {
