@@ -90,6 +90,7 @@
     transition-duration: 0.4s;
     color: black;
     text-decoration: none;
+    border: #092e72 solid 1px;
 }
 
 .backButton:hover {
@@ -127,7 +128,7 @@
     height: 300px;
     top: 42.5%;
     left: 33%;
-    background-color: #00b66b;
+    background-color: #00b609;
     display: none;
 }
 
@@ -153,9 +154,10 @@
 
 #endPointsText {
     color:#0030b6; 
-    position: relative; 
-    top: 150px; 
-    left: 200px; 
+    position: absolute; 
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%);
 }
 
 .treat {
@@ -164,4 +166,19 @@
     top: -500px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+}
+
+#retryGame {
+    position: absolute;
+    padding: 12px 24px;
+    background-color: #092e72;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    border: #000000 solid 1px;
+    transition-duration: 0.4s;
+}
+
+#retryGame:hover {
+    background-color: rgb(21, 21, 187);
 }
