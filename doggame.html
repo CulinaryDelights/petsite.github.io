@@ -3,10 +3,10 @@
     <head>
         <title>The Dog Game</title>
         <link rel="stylesheet" href="style.css">
-        <canvas id="canvas" style="position: absolute; top: 42.5%; left: 33%; image-rendering: pixelated; image-rendering: crisp-edges;"></canvas>
+        <canvas id="canvas" style="position: absolute; top: 42.5%; left: 33%;"></canvas>
     </head>
     <body style="background-color:#6b00b6;">
-        <h1 class="picPageTitleText">The Dog Game</h1>
+        <h1 class="picPageTitleText" style="transform: translate(-50%);">The Dog Game</h1>
         <script src="game.js"></script>
         <a class="backButton" href='index.html'>Back</a>
 
@@ -24,8 +24,8 @@
         <h3 id="timeCounter"></h3>
 
         <div id="gameEndCover">
-            <h2 style="color:#0030b6; position: absolute; top: 50%; left: 50%; margin-left: -140px; margin-top: -65px;">Did you beat your highscore?</h2>
             <h2 id="endPointsText"></h2>
+            <button onclick="Retry();" id="retryGame">Retry</button>
         </div>
     </body>
 </html>

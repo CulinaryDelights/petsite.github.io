@@ -1,3 +1,12 @@
+function Retry() {
+    document.getElementById('gameEndCover').style.display = 'none';
+    seconds = 30;
+    end = false;
+    points = 0;
+    treats = [];
+    Start();
+}
+
 function Start() {
     const clock = document.getElementById('clockTreat');
     const pizza = document.getElementById('pizzaTreat');
@@ -15,9 +24,10 @@ function Start() {
     context.canvas.width = 500;
     context.canvas.height = 300;
 
-    var treats = [];
-
-    var seconds = 30;
+    treats = [];
+    seconds = 30;
+    end = false;
+    points = 0;
     setInterval(function(){
         seconds -= 1
     }, 1000)
@@ -29,7 +39,6 @@ function Start() {
         xVelocity: 0,
         y: 200,
         spd: 0.25,
-        points: 0,
         image: dog,
     };
 
@@ -69,7 +78,6 @@ function Start() {
 
     spawnTreat()
     var spawnTimer = window.setInterval(spawnTreat,1000);
-
     loop = function() {
         
         if(controller.left) {
@@ -103,8 +111,10 @@ function Start() {
             if (player.x - treat.width < treat.x && player.x + player.width > treat.x && player.y - treat.height / 2 < treat.y && player.y + player.height > treat.y)
             {
                 treat.x = 1000;
-                player.points += treat.pointAmount;
-                seconds += treat.timeAmount;
+                if(end == false) {
+                    points += treat.pointAmount;
+                    seconds += treat.timeAmount;
+                }
             }
             treat.y += treat.gravity
             if(treat.pickColor == 1) {
@@ -132,7 +142,7 @@ function Start() {
                 context.beginPath();
             }
 
-            document.getElementById('pointCounter').innerHTML = 'Points: ' + player.points;
+            document.getElementById('pointCounter').innerHTML = 'Points: ' + points;
             document.getElementById('timeCounter').innerHTML = 'Seconds Left: ' + seconds;
         }
         context.fillStyle = "#743E0C";
@@ -142,15 +152,11 @@ function Start() {
         window.requestAnimationFrame(loop);
 
         if(seconds <= 0) {
-            End();
             document.getElementById('gameEndCover').style.display = 'block';
-            document.getElementById('endPointsText').innerHTML = "Score: " + player.points
+            document.getElementById('endPointsText').innerHTML = "Score: " + points;
+            end = true;
         }
     };
-
-    function End() {
-        loop = undefined;
-    }
 
     window.addEventListener("keydown",controller.keyListener)
     window.addEventListener("keyup", controller.keyListener)
