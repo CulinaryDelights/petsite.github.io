@@ -21,13 +21,16 @@
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .dogDropBtn {
     background-color:steelblue;
     border: none;
-    padding: 12px 36px;
+    padding: 12px 24px;
     transition-duration: 0.2s;
+    font-family: serif;
+    font-size: 16px;
 }
 
 .dogDropdown {
@@ -74,6 +77,7 @@
     transition-duration: 0.4s;
     color: black;
     text-decoration: none; 
+    font-family: serif;
 }
 
 .dogGameButton:hover {
@@ -102,6 +106,31 @@
     width: 300px;
     height: 200px;
     position: absolute;
+}
+
+.dogPic1 {
+    top: 25%; left: 7.5%;
+}
+.dogPic2 {
+    top: 25%; left: 29.5%;
+}
+.dogPic3 {
+    top: 25%; left: 51.5%;
+}
+.dogPic4 {
+    top: 25%; left: 73.5%;
+}
+.dogPic5 {
+    top: 60%; left: 7.5%;
+}
+.dogPic6 {
+    top: 60%; left: 29.5%;
+}
+.dogPic7 {
+    top: 60%; left: 51.5%;
+}
+.dogPic8 {
+    top: 60%; left: 73.5%;
 }
 
 .puppyPizza {
@@ -151,6 +180,62 @@
     transform: translate(-50%,-50%);
     color: rgb(197, 255,255);
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    .homeText {
+        left: 50%;
+        top: -5%;
+        transform: translate(-50%);
+    }
+
+    .picPageTitleText {
+        font-size: 48px;
+        top: 4.5%;
+    }
+
+    .dogPic {
+        width: 150px;
+        height: 100px;
+    }
+
+    .dogPic1 {
+        top: 20%; left: 8%;
+    }
+    .dogPic2 {
+        top: 20%; left: 55%;
+    }
+    .dogPic3 {
+        top: 40%; left: 8%;
+    }
+    .dogPic4 {
+        top: 40%; left: 55%;
+    }
+    .dogPic5 {
+        top: 60%; left: 8%;
+    }
+    .dogPic6 {
+        top: 60%; left: 55%;
+    }
+    .dogPic7 {
+        top: 80%; left: 8%;
+    }
+    .dogPic8 {
+        top: 80%; left: 55%;
+    }
+
+    .petPage .backButton {
+        top: 3%;
+        left: 8%;
+        padding: 6px 12px;
+    }
+
+    #cutepuppiespage .picPageTitleText {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+        top: 3%;
+    }
 }
 
 /*Game stuff after this point*/
