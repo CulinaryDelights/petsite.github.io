@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet Year Converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="background: #1A71AC;">
+        <h1 class="picPageTitleText" style="text-align: center; font-size: 84px;">Pet Year Converter</h1>
+
+        <div class="convertInputBackground"></div>
+        <div class="convertInputBackground" style="position: absolute; left: 65%;"></div>
+
+        <form method="GET" class="convertInput">
+            <input type="text" name="firpet" placeholder="First Pet" list="pet">
+
+            <p style="color: #229F00; font-weight: bold;">years</p>
+
+            <input type="text" name="secpet" placeholder="Second Pet" list="pet" style="position: absolute; left: 280%; top: 5%;">
+            <p style="position: absolute; left: 280%; top: 35%; color: #229F00; font-weight: bold;">years</p>
+
+            <h4 style="position: absolute; left: 190%; top: 5%; font-size: 24px;">to</h4>
+
+            <datalist id="pet">
+                <option value="dog">
+                <option value="cat">
+                <option value="fish">
+                <option value="hamster">
+                <option value="human">
+            </datalist>
+
+            <button type="submit" class="backButton" style="top: 150%; left: 170%; background: cornflowerblue;">Submit</button>
+        </form>
+
+        <a class="backButton" href="games.html" style="left: 8%; top: 7%;">Back to Games</a>
+
+        <h4 id="animalYears" style="margin: 0px;"></h4>
+        <script src="converter.js"></script>
+    </body>
+</html>

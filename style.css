@@ -104,13 +104,61 @@
     position: absolute;
 }
 
+.puppyPizza {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.convert-button-goto {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    left: 75%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.convertInput {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.convertInputBackground {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    height: 300px;
+    width: 200px;
+    border:#229F00 solid 15px;
+    background: #11DAAB;
+    float: left;
+    border-radius: 35%;
+}
+
+#animalYears {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(197, 255,255);
+    text-align: center;
+}
 
 /*Game stuff after this point*/
 
 #pointCounter {
     position: absolute;
-    top: 45%;
-    left: 58%;
+    top: 30px;
+    left: 50px;
 }
 
 #gameCover {
@@ -148,8 +196,8 @@
 
 #timeCounter {
     position: absolute;
-    top: 45%;
-    left: 36%;
+    top: 30px;
+    left: 320px;
 }
 
 #endPointsText {
@@ -181,4 +229,12 @@
 
 #retryGame:hover {
     background-color: rgb(21, 21, 187);
+}
+
+#canvasRep {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 42.5%;
+    left: 33%;
 }
