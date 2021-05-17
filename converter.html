@@ -9,17 +9,19 @@
         <h1 class="picPageTitleText" style="text-align: center; font-size: 84px;">Pet Year Converter</h1>
 
         <div class="convertInputBackground"></div>
-        <div class="convertInputBackground" style="position: absolute; left: 65%;"></div>
 
         <form method="GET" class="convertInput">
+            
             <input type="text" name="firpet" placeholder="First Pet" list="pet">
 
             <p style="color: #229F00; font-weight: bold;">years</p>
 
-            <input type="text" name="secpet" placeholder="Second Pet" list="pet" style="position: absolute; left: 280%; top: 5%;">
-            <p style="position: absolute; left: 280%; top: 35%; color: #229F00; font-weight: bold;">years</p>
+            <div class="convertInputBackground" style="position: absolute; left: 580px; top: 75px">
+                <input type="text" name="secpet" placeholder="Second Pet" list="pet" style="position: relative; top: 80px; left: 15px;">
+                <p style="color: #229F00; font-weight: bold; position: relative; left: 15px; top: 78px;">years</p>
+            </div>
 
-            <h4 style="position: absolute; left: 190%; top: 5%; font-size: 24px;">to</h4>
+            <h4 style="position: absolute; left: 315px; top: 5%; font-size: 24px;">to</h4>
 
             <datalist id="pet">
                 <option value="dog">
@@ -29,7 +31,7 @@
                 <option value="human">
             </datalist>
 
-            <button type="submit" class="backButton" style="top: 150%; left: 170%; background: cornflowerblue;">Submit</button>
+            <button type="submit" class="backButton" style="top: 100px; left: 280px; background: cornflowerblue;">Submit</button>
         </form>
 
         <a class="backButton" href="games.html" style="left: 8%; top: 7%;">Back to Games</a>
