@@ -9,7 +9,9 @@ var humanAge = 79;
 var dogAge = 11;
 var catAge = 15;
 var fishAge = 3;
+var birdAge = 18;
 var hamsterAge = 3;
+var snakeAge = 22;
 
 var isNumber = true;
 var animalType;
@@ -20,6 +22,8 @@ petDictionary = {
     'hamster': hamsterAge,
     'fish': fishAge,
     'human': humanAge,
+    'bird': birdAge,
+    'snake': snakeAge,
 }
 
 var firstParam = petDictionary[firstPet];
@@ -27,12 +31,7 @@ var secondParam = petDictionary[secondPet];
 
 var answer = firstParam / secondParam;
 
-if(answer >= 1) {
-    answer = Math.round(answer);
-}
-else {
-    answer = answer.toFixed(2);
-}
+answer = answer.toFixed(2);
 
 if(isNaN(firstParam) || isNaN(secondParam)) {
     isNumber = false;

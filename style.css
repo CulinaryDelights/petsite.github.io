@@ -16,6 +16,10 @@
     transform: translate(-50%);
 }
 
+#australianshepherdpage h1{
+    width: 59%;
+}
+
 .homepage {
     background-image: url("pictures/golden_retriever.jpg");
     background-size: cover;
@@ -181,6 +185,7 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%);
+    height: 10px;
 }
 
 .convertInputBackground {    
@@ -215,7 +220,7 @@
 .convertInput h2 {
     position: absolute;
     left: 50%;
-    top: -20%;
+    top: -80px;
     transform: translate(-50%,-50%);
 }
 
@@ -234,11 +239,12 @@
 
 #animalYears {
     position: absolute;
-    top: 85%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: rgb(197, 255,255);
     text-align: center;
+    font-size: 30px;
 }
 /*End of Converter Stuff*/
 
@@ -362,6 +368,12 @@
     #animalYears {
         position: relative;
         top: 1000px;
+    }
+
+    #australianshepherdpage h1 {
+        font-size: 32px;
+        width: 39%;
+        top: 2%;
     }
 }
 
