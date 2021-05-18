@@ -137,33 +137,53 @@
     width: 450px;
     height: auto;
     position: absolute;
-    left: 25%;
+    left: 30%;
     top: 55%;
     transform: translate(-50%,-50%);
     color: white;
+}
+
+.puppyPizza p {
+    position: absolute;
+    left: -50px;
+    top: 225px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .convert-button-goto {
     width: 450px;
     height: auto;
     position: absolute;
-    left: 75%;
+    left: 70%;
     top: 55%;
     transform: translate(-50%,-50%);
     color: white;
 }
 
-.convertInput {
+.convert-button-goto p {
     position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%,-50%);
+    left: 100px;
+    top: 225px;
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
 }
 
-.convertInputBackground {
+/*Converter Stuff*/
+.convertInput {
     position: absolute;
     top: 55%;
-    left: 35%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.convertInputBackground {    
     transform: translate(-50%,-50%);
     height: 300px;
     width: 200px;
@@ -173,15 +193,56 @@
     border-radius: 35%;
 }
 
+.convertInput #secondConverter {
+    position: relative;
+    left: 250px;
+}
+
+.convertInput input {
+    position: relative;
+    top: 80px;
+    left: 15px;
+}
+
+.convertInput p {
+    font-weight: bold;
+    color: #229F00;
+    position: relative;
+    left: 15px;
+    top: 75px;
+}
+
+.convertInput h2 {
+    position: absolute;
+    left: 50%;
+    top: -20%;
+    transform: translate(-50%,-50%);
+}
+
+.convertInput button {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    background: cornflowerblue;
+}
+
+.converterPage h1 {
+    text-align: center; 
+    font-size: 84px; 
+}
+
 #animalYears {
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: rgb(197, 255,255);
     text-align: center;
 }
+/*End of Converter Stuff*/
 
+/*Media Queries (Make it look good on phones)*/
 @media (max-width: 700px) {
     .homeText {
         left: 50%;
@@ -224,7 +285,7 @@
         top: 80%; left: 55%;
     }
 
-    .petPage .backButton {
+    .backButton {
         top: 3%;
         left: 8%;
         padding: 6px 12px;
@@ -234,7 +295,73 @@
         font-size: 40px;
         margin: 0;
         text-align: center;
-        top: 3%;
+    }
+
+    .convert-button-goto {
+        top: 115%;
+        left: 50%;
+        width: 325px;
+        height: auto;
+    }
+
+    .convert-button-goto p {
+        top: 150px;
+        font-size: 18px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .puppyPizza {
+        width: 325px;
+        height: auto;
+        left: 50%;
+    }
+
+    .puppyPizza p {
+        font-size: 18px;
+        left: 50%;
+        top: 175px;
+        transform: translate(-50%);
+        width: 100%;
+    }
+
+    .gamePage .picPageTitleText {
+        top: 10%;
+        width: 100%;
+        left: 65%;
+    }
+    
+    .converterPage h1 {
+        font-size: 36px;
+        width: 100%;
+        top: 10%
+    }
+
+    .convertInput {
+        left: 50%;
+        top: 50%;
+        width: 0px;
+    }
+
+    .convertInput #secondConverter {
+        position: relative;
+        left: 0px;
+        top: 75px;
+    }
+    
+    .convertInput h2 {
+        position: absolute;
+        top: 180px;
+    }
+
+    .convertInput button {
+        top: 90%;
+        left: 0px;
+    }
+
+    #animalYears {
+        position: relative;
+        top: 1000px;
     }
 }
 
