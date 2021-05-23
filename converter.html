@@ -12,36 +12,32 @@
 
         <form method="GET" class="convertInput">
             <div class="convertInputBackground">
-                <input type="text" name="firpet" placeholder="First Pet" list="pet">
+                <select name="firpet">
+                    <option value="human">Human</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="fish">Fish</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="bird">Bird</option>
+                    <option value="snake">Snake</option>
+                </select>
                 <p>years</p>
             </div>
 
             <div class="convertInputBackground" id="secondConverter">
-                <input type="text" name="secpet" placeholder="Second Pet" list="pet">
+                <select name="secpet">
+                    <option value="human">Human</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="fish">Fish</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="bird">Bird</option>
+                    <option value="snake">Snake</option>
+                </select>
                 <p>years</p>
             </div>
 
             <h2>to</h2>
-
-            <datalist id="pet">
-                <option value="human">
-                <option value="dog">
-                <option value="cat">
-                <option value="fish">
-                <option value="hamster">
-                <option value="bird">
-                <option value="snake">
-            </datalist>
-
-            <!--<select id="pet">
-                <option value="human">Human</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="fish">Fish</option>
-                <option value="hamster">Hamster</option>
-                <option value="bird">Bird</option>
-                <option value="snake">Snake</option>
-            </select>-->
 
             <button type="submit" class="backButton">Submit</button>
         </form>

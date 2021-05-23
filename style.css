@@ -203,10 +203,11 @@
     left: 250px;
 }
 
-.convertInput input {
+.convertInput select {
     position: relative;
-    top: 80px;
+    top: 70px;
     left: 15px;
+    width: 150px;
 }
 
 .convertInput p {
