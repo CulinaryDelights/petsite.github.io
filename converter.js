@@ -12,6 +12,7 @@ var fishAge = 3;
 var birdAge = 18;
 var hamsterAge = 3;
 var snakeAge = 22;
+var axolotlAge = 15;
 
 var isNumber = true;
 var animalType;
@@ -24,6 +25,7 @@ petDictionary = {
     'human': humanAge,
     'bird': birdAge,
     'snake': snakeAge,
+    'axolotl': axolotlAge
 }
 
 var firstParam = petDictionary[firstPet];

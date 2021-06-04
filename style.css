@@ -7,7 +7,7 @@
     top: 5%;
     font-size: 96px;
     left: 13%;
-    font-family: 'Trebuchet MS';
+    font-family: 'Bevan', cursive;
 }
 
 .picPageTitleText {
@@ -15,7 +15,7 @@
     left: 50%;
     top: -5%;
     font-size: 96px;
-    font-family: 'Trebuchet MS';
+    font-family: 'Balsamiq Sans', cursive;
     font-weight: 900;
     transform: translate(-50%);
 }
@@ -299,6 +299,7 @@
     text-align: center;
     font-size: 30px;
 }
+
 /*End of Converter Stuff*/
 
 /*Phone Media Queries*/
@@ -476,14 +477,13 @@
 }
 
 /*Game stuff after this point*/
-
 #pointCounter {
     position: absolute;
     top: 30px;
     left: 50px;
 }
 
-#gameCover {
+.gameCover {
     position: absolute;
     width: 500px;
     height: 300px;
@@ -492,7 +492,16 @@
     background-color: wheat;
 }
 
-#gameEndCover {
+#whackGameCover {
+    height: 500px;
+    top: 25%;
+}
+
+#whackStartButton {
+    top: 45%;
+}
+
+.gameEndCover {
     position: absolute;
     width: 500px;
     height: 300px;
@@ -502,7 +511,22 @@
     display: none;
 }
 
-#startGame {
+#whackGameEndCover {
+    top: 25%;
+    height: 500px;
+}
+
+#whackPointCounter {
+    position: absolute;
+    top: 26%;
+    left: 49.5%;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: left;
+    font-size: 18px;
+}
+
+.startGame {
     position: absolute;
     top: 128px;
     left: 208px;
@@ -512,7 +536,7 @@
     border: black solid 2px;
 }
 
-#startGame:hover {
+.startGame:hover {
     background-color: rgb(192, 58, 84);
 }
 
@@ -522,7 +546,7 @@
     left: 320px;
 }
 
-#endPointsText {
+.gameEndText {
     color:#0030b6; 
     position: absolute; 
     top: 25%; 
@@ -536,9 +560,11 @@
     top: -500px;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
+    width: 0px;
+    height: 0px;
 }
 
-#retryGame {
+.retryGame {
     position: absolute;
     padding: 12px 24px;
     background-color: #092e72;
@@ -549,7 +575,7 @@
     transition-duration: 0.4s;
 }
 
-#retryGame:hover {
+.retryGame:hover {
     background-color: rgb(21, 21, 187);
 }
 

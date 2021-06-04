@@ -4,12 +4,26 @@
         <title>The Dog Game</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" type="image/ico" href="pictures/favicon.ico">
-        <canvas id="canvas" style="position: absolute; top: 42.5%; left: 33%;"></canvas>
+        <canvas id="canvas" style="position: absolute; top: 25%; left: 33%;"></canvas>
         <meta name="viewport"
             content="width=device-width, initial-scale=1">
     </head>
     <body style="background-color:#6b00b6;">
-        <h1 class="picPageTitleText" style="transform: translate(-50%); text-align: center;">Whack a Fish</h1>
+        <h1 class="picPageTitleText" style="transform: translate(-50%); text-align: center; width: 100%;">Whack-A-Chinchilla</h1>
+        <p id="whackPointCounter"></p>
+
+        <img src="pictures/game/chinchilla.png" id="gameChinchilla" class="treat">
+        <img src="pictures/game/hammer.png" id="gameHammer" class="treat">
+
+        <div id="whackGameCover" class="gameCover">
+            <button onclick="Start();" id="whackStartButton" class="startGame">Start</button>
+        </div>
+        
+        <div id="whackGameEndCover" class="gameEndCover">
+            <h2 class="gameEndText" id="whackTimeText"></h2>
+            <button onclick="Start();" id="whackRestartButton" class="retryGame">Retry</button>
+        </div>
+
         <script src="whackafish.js"></script>
     </body>
 </html>

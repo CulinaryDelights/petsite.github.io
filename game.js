@@ -1,5 +1,5 @@
 function Retry() {
-    document.getElementById('gameEndCover').style.display = 'none';
+    document.getElementById('dogGameEndCover').style.display = 'none';
     seconds = 30;
     end = false;
     points = 0;
@@ -14,8 +14,7 @@ function Start() {
     const dog = document.getElementById('playerLeft');
     const dogRight = document.getElementById('playerRight');
 
-    document.getElementById('startGame').remove();
-    document.getElementById('gameCover').remove();
+    document.getElementById('dogGameCover').remove();
 
     var context, controller, player;
 
@@ -152,7 +151,7 @@ function Start() {
         window.requestAnimationFrame(loop);
 
         if(seconds <= 0) {
-            document.getElementById('gameEndCover').style.display = 'block';
+            document.getElementById('dogGameEndCover').style.display = 'block';
             document.getElementById('endPointsText').innerHTML = "Score: " + points;
             end = true;
         }
