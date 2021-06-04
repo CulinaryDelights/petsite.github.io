@@ -219,6 +219,18 @@
     left: -90px;
 }
 
+.whackGameGoto {
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    width: 350px;
+}
+
+.whackGameGoto p {
+    position: relative;
+    top: calc(var(--dogPageTextHeight) + 350px);
+}
+
 .convert-button-goto p {
     position: absolute;
     left: 100px;
@@ -473,6 +485,10 @@
      
     #gotoMountainDogText {
         top: 250px;
+    }
+
+    .whackGameGoto {
+        top: 80%;
     }
 }
 
