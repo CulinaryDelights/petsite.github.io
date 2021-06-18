@@ -59,7 +59,6 @@
 
 .backButton {
     background-color:steelblue;
-    border: none;
     padding: 12px 24px;
     position: absolute;
     top: 10%;
@@ -67,7 +66,7 @@
     transition-duration: 0.4s;
     color: black;
     text-decoration: none;
-    border: #092e72 solid 1px;
+    border: #092e72 solid 2px;
 }
 
 .backButton:hover {
@@ -316,6 +315,10 @@
 
 /*Phone Media Queries*/
 @media (max-width: 700px) {
+    :root {
+        --dogPageTextHeight: 100px;
+    }
+
     .homeText {
         left: 50%;
         top: -5%;
@@ -442,6 +445,57 @@
         width: 39%;
         top: 2%;
     }
+    
+    .whackGameGoto {
+        top: 90%;
+        left: 50%;
+    }
+    
+    .puppyPizza {
+        top: 50%;
+        left: 50%;
+    }
+
+    .cavachonGoto {
+        top: 90%;
+        left: 50%;
+        width: 300px;
+    }
+    
+    .corgiGoto {
+        top: 135%;
+        left: 50%;
+    }
+    
+    .pomeranianGoto {
+        top: 180%;
+        left: 50%;
+        width: 300px;
+    }
+    
+    .mountainDogGoto {
+        top: 210%;
+        left: 50%;
+        width: 300px;
+    }
+    
+    .cutePuppiesGoto {
+        top: 260%;
+        left: 50%;
+        width: 300px;
+    }
+
+    .convert-button-goto {
+        left: 50%;
+        top: 330%;
+        width: 300px;
+    }
+    
+    .australianshepherdGoto {
+        left: 50%;
+        top: 325%;
+        width: 300px;
+    }
 }
 
 /*Mac and Chromebook Media Queries*/
@@ -484,11 +538,37 @@
     }
      
     #gotoMountainDogText {
-        top: 250px;
+        position: relative;
+        top: 350px;
     }
 
     .whackGameGoto {
         top: 80%;
+    }
+
+    #gotoGoldendoodleText {
+        position: absolute;
+        left: 50%;
+    }
+    
+    #gotoHuskyText {
+        
+    }
+    
+    #gotoPomeranianText {
+        
+    }
+    
+    #gotoMountainDogText {
+        
+    }
+    
+    #gotoPuppiesText {
+        
+    }
+    
+    #gotoCavachonText {
+        
     }
 }
 
